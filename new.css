@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+.logo {
+    width: 100px; /* Adjust the size of the logo */
+    margin-right: 10px;
+}
+.menu-container {
+    position: relative;
+    display: inline-block;
+    list-style-type: style:none;
+  
+}
+
+/* Style for the menu button */
+.menu-btn {
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    list-style-type: style:none;
+    
+}
+
+/* Style for the hidden content */
+.hidden-content {
+    
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1e5360;
+    padding: 10px;
+    border-radius: 5px;
+    list-style-type: style:none;
+}
+
+/* Show the hidden content on hover */
+.menu-container:hover .hidden-content {
+    display: block;
+}
+.navigation {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.signup-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for the signup-login button */
+.signup-container {
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+}
+button {
+    background-color: #3498db;
+    color: rgb(220, 235, 225);
+    padding: 7px 10px;
+    margin:5px 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    
+  }
+  
+  button:hover {
+    opacity:1;
+  }
+
+
+/* Style for the signup-login hidden content */
+.signup-login-hidden-content {
+    
+    display: block;
+    position: absolute;
+    background-color: #333;
+    min-width: 100px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.signup-login-hidden-content a {
+    color: rgb(217, 194, 194);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Show the signup-login Hidden content on hover */
+.signup-container:hover .signup-login-hidden-content {
+    display: block;
+}
+.slideshow-container {
+    position: relative;
+    width: 500px;/* set the width of the slideshow */
+    height: 300px;/* set the width of the slideshow */
+    overflow: hidden; /* hide any overflow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    transition: opacity 3s ease-in-out;
+  }
+#myButton {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: auto;
+
+
+  }

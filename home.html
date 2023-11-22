@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <section>
+        <header>
+            <div class="logo-container">
+            <img src="images/g.jpg" width="100" height="100">
+            <h1>Growers Hub</h1>
+        </div>
+        <br>
+        <!-- Menu container -->
+        <div class="menu-container">
+                <!-- Menu button -->
+                <div class="menu-btn">Home</div>
+            <!-- Hidden content -->
+            <div class="hidden-content">
+                    <div class="navigation">
+                        <uL>
+                            <li><a href="home.html">Home</a></li><br>
+                            <li><a href="about.html">About</a></li><br>
+                            <li><a href="services.html">Services</a></li><br>
+                            <li></li>
+                        </ul>
+                        
+                    </div>
+            </div>
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-primary me-md-2" type="button">Sign Up</button>
+            <button class="btn btn-primary" type="button">Log in</button>
+          </div>
+    </header>
+</section>
+
+    <!-- Your website content goes here -->
+<section>
+    <div class="About">
+        <h1>About</h1>
+        <p1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, maiores 
+            nobis laboriosam beatae corporis quas obcaecati amet ipsa explicabo a 
+            soluta non nam porro ipsam maxime neque sint vitae eum.</p1>
+            <div class="slideshow-container">
+                <img class="slide" src="images/seed.jpg" alt="Slide 1">
+                <img class="slide" src="images/seedling.jpg.jpg" alt="Slide 2">
+                <img class="slide" src="images/nursery.jpg" alt="Slide 3">
+              </div>
+           
+        <button id="myButton">Learn More</button>
+      
+   
+    </div>
+</section>
+<hr>
+<footer>
+	<section>
+    <h3>Sign up for our newsletter</h3>
+    <form action="">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <input type="submit" value="Subscribe">
+    </form>
+    </section>
+
+    <div>
+        <h3>Contact Information</h3>
+        <p>Email: </p>
+        <p>Phone: </p>
+    </div>
+	
+	<h3>Social Media Links</h3>
+
+    <div id="socialMediaLinks">
+        <a href="https://www.facebook.com/username">Facebook</a>
+        <a href="https://www.twitter.com/username">Twitter</a>
+        <a href="https://www.instagram.com/username">Instagram</a>
+        <a href="https://www.linkedin.com/in/username">LinkedIn</a>
+    </div>
+	
+	<div>
+        <h5>Terms and Conditions -  <a href="terms-and-conditions.html">here</a> </h5>
+        <h5>Privacy Policy - <a href="privacy-policy.html">here</a> </h5>
+	</div>
+	
+        <p>&copy; 2022 Growers Hub. 
+		All rights reserved.</p>
+    </footer>
+<script>
+    const slides = document.querySelectorAll('.slide');
+        let currentSlideIndex = 0;
+    
+        function showSlide(index) {
+          slides.forEach((slide, i) => {
+            if (i === index) {
+              slide.style.opacity = 1;
+            } else {
+              slide.style.opacity = 0;
+            }
+          });
+        }
+    
+        function nextSlide() {
+          currentSlideIndex++;
+          if (currentSlideIndex >= slides.length) {
+            currentSlideIndex = 0;
+          }
+          showSlide(currentSlideIndex);
+        }
+    
+        setInterval(nextSlide, 2000); // Change slide every 2 seconds
+    </script>
+</body>
+
+
+</html>

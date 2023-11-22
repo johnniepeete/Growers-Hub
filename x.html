@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Menu</title>
+    <style>
+        /* Style for the menu container */
+        .menu-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Style for the menu button */
+        .menu-btn {
+            cursor: pointer;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* Style for the hidden content */
+        .hidden-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Show the hidden content on hover */
+        .menu-container:hover .hidden-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu container -->
+    <div class="menu-container">
+
+        <!-- Menu button -->
+        <div class="menu-btn">Hover me</div>
+
+        <!-- Hidden content -->
+        <div class="hidden-content">
+            <div class="navigation">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+            </div>
+
+    </div>
+
+</body>
+</html>

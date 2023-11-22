@@ -1,0 +1,44 @@
+body
+/*signup/login-container*/
+.signup-login-container {
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .signupLoginBtn{
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .hidden-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1e5360;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* Show the hidden content on hover */
+.menu-container:hover .hidden-content {
+    display: block;
